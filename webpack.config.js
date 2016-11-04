@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        app: ["./src/index.jsx"]
+        app: ["./src/index.js"]
     },
     output: {
         path: path.resolve(__dirname, "build"),
@@ -35,5 +35,8 @@ module.exports = {
                 loaders: ['style', 'css', 'sass']
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     }
 };

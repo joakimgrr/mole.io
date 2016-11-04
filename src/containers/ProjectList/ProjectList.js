@@ -7,7 +7,7 @@ class ProjectList extends Component {
         return (
             <div className="project-list">
                 {this.props.projects.map((data, i) => {
-                    return (<ProjectRow project={data}/>)
+                    return (<ProjectRow project={data} key={data.id}/>)
                 })}
             </div>
         );
