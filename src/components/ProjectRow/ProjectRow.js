@@ -7,7 +7,7 @@ class ProjectRow extends Component {
         return (
             <div className="project-row">
                 <div className="project-row__info">
-                    <h3>{this.props.project.name}</h3>
+                    <h3 className="project-row__name">{this.props.project.name}</h3>
                     <span>{this.props.project.description}</span>
                 </div>
                 <div className={'project-row__status project-row__status--' + this.props.project.status}>

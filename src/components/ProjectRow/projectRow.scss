@@ -3,11 +3,26 @@
 .project-row {
     display: flex;
     flex-direction: row;
-    margin-top: $grid-gutter-width * 2px;
+    margin-top: $grid-gutter-width * 1px;
+    padding: $grid-gutter-width * 1px;
+    border: 1px solid #fff;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:hover {
+        border-color: #efefef;
+        cursor: pointer;
+    }
 }
 
 .project-row__info {
     flex: 1;
+}
+
+.project-row__name {
+    margin-top: 0;
 }
 
 .project-row__status {
