@@ -9,6 +9,17 @@ module.exports = {
         publicPath: "/build/",
         filename: "bundle.js"
     },
+    resolve: {
+        root: [
+            path.resolve(__dirname)
+        ],
+        alias: {
+            components: 'src/components',
+            containers: 'src/containers',
+            views: 'src/views'
+        },
+        extensions: ['', '.js', '.jsx']
+    },
     module: {
         loaders: [
             {

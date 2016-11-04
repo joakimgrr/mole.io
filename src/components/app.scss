@@ -1,3 +1,4 @@
-h1 {
-    color: green;
-}
+@import "../styles/_fonts.scss";
+@import "../styles/_globals.scss";
+
+$navigation-height: 60px;
