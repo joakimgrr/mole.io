@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Navigation from 'components/Navigation/Navigation';
-import ProjectsView from 'views/ProjectsView/ProjectsView';
 
 import './app.scss';
 
@@ -11,7 +10,7 @@ class App extends Component {
             <div className="App">
                 <Navigation />
                 <div className="container">
-                    <ProjectsView />
+                    {this.props.children}
                 </div>
             </div>
         );
