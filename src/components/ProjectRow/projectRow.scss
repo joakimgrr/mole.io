@@ -24,26 +24,3 @@
 .project-row__name {
     margin-top: 0;
 }
-
-.project-row__status {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &--passed {
-        border-color: $color-success;
-        color: $color-success;
-    }
-
-    &--failed {
-        border-color: $color-fail;
-        color: $color-fail;
-    }
-}
-
-.project-row__statustext {
-    display: block;
-    padding: 5px $grid-gutter-width * 1px;
-    border: 1px solid;
-    border-radius: 5px;
-}
