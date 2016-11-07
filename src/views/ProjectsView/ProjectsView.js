@@ -11,11 +11,13 @@ class ProjectsView extends Component {
 
         this.devProjects = [
             {
+                id: '123asdf',
                 name: 'Project Alpha',
                 description: 'Project about alpha particles',
                 status: 'passed'
             },
             {
+                id: '98asgf',
                 name: 'Project XYZ',
                 description: 'Testing suite',
                 status: 'failed'
@@ -26,7 +28,7 @@ class ProjectsView extends Component {
     render() {
         return (
             <div className="projects-view">
-                <h2>Projects view</h2>
+                <h2>Projects</h2>
                 <ProjectList projects={this.devProjects}/>
             </div>
         );
