@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './components/App';
-
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-
 
 import App from 'components/App';
 import Navigation from 'components/Navigation/Navigation';
@@ -14,7 +11,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={ProjectsView}/>
-            
+
             <Route path="/projects" component={ProjectsView}></Route>
             <Route path="/projects/:projectId" component={Project}></Route>
         </Route>
