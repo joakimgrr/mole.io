@@ -24,3 +24,9 @@
 .project-row__name {
     margin-top: 0;
 }
+
+.project-row__status-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

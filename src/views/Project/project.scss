@@ -1,0 +1,17 @@
+.project-view {
+
+}
+
+.project-view__header {
+    display: flex;
+}
+
+.project-view__title-wrapper {
+    flex-grow: 1;
+}
+
+.project-view__status-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
