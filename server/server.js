@@ -1,13 +1,22 @@
-let express = require('express')
-let app = express()
-let mongoose = require('mongoose')
+let express = require('express');
+let app = express();
+let mongoose = require('mongoose');
+let bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
 
 mongoose.connect('mongodb://localhost/moleio');
+const db = mongoose.connection;
+const port = 8002;
 
-app.get('/', function (req, res) {
-  res.send('Hello World! !! !!')
-})
-let port = 8002;
-app.listen(port, function () {
-  console.log('Example app listening on port: '+port)
-})
+db.on('error', console.error.bind(console, 'connection error:'));
+
+db.once('open', function() {
+    console.log('connected to database')
+
+    require('./routes/api')(app, db);
+
+    app.listen(port, function () {
+        console.log('Example app listening on port: '+port)
+    })
+});

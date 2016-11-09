@@ -4,6 +4,7 @@
   "description": "Visual regression testing tool",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongoose": "^4.6.6",
     "nodemon": "^1.11.0",
